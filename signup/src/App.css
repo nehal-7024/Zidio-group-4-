@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg,#2f4156, #567c8d, #f5efeb); /* Greenish white gradient */
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  width: 100%;
+  padding: 0.6rem;
+}
+
+.registration-container {
+  margin: 0 auto;
+  max-width: 450px;
+  padding: 1.3rem 1rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.5); 
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px); 
+}
+.form-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.60rem;
+  color: #000000; /* Black */
+}
+
+.registration-form .input-wrapper {
+  height: 40px;
+  width: 90%;
+  position: relative;
+  margin-bottom: 1.3rem;
+}
+
+.registration-form .input-field {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 1.06rem;
+  border-radius: 0.31rem;
+  border: 1px solid #bfb3f2;
+  padding: 0px 1.25rem 0 1.25rem;
+  transition: 0.2s ease;
+  color: white; 
+  background-color: transparent; 
+}
+
+.registration-form .input-field:focus {
+  border-color: #5F41E4;
+}
+
+.registration-form .input-field::placeholder {
+  color: white; /* White placeholder text */
+}
+
+.submit-button {
+  width: 100%;
+  height: 54px;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 2.19rem;
+  border-radius: 0.31rem;
+  background: #11212d;
+  border: none;
+  outline: none;
+  transition: 0.3s ease;
+  
+}
+
+.submit-button:hover {
+  background: #11212d;
+}
+
+.login-prompt {
+  text-align: center;
+  font-size: 1.06rem;
+  font-weight: 500;
+  margin: 1.75rem 0 0.31rem;
+  color: #000000; /* Black */
+}
+
+.login-prompt a {
+  color: #00000065;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.login-prompt a:hover {
+  text-decoration: underline;
+}
+
+/* Additional Styles for Label */
+.registration-form .label {
+  color: white; /* Label text color changed to white */
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.new-account {
+  text-align: center;
+  color: #333; /* Light black */
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.registration-text {
+  color: #000000; /* Black for 'Registration' */
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+

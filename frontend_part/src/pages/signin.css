@@ -1,0 +1,142 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Signin Container */
+  .signin-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Form Styling */
+  .signin-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center form items horizontally */
+    gap: 1.5rem;
+    width: 100%; /* Ensure form takes full width of container */
+  }
+  
+  .signin-form h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    animation: slideDown 0.5s ease-in-out;
+  }
+  
+  .signin-form input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .signin-form input:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 10px rgba(106, 17, 203, 0.3);
+  }
+  
+  .signin-form button {
+    width: 100%;
+    padding: 0.8rem;
+    background: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 49px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .signin-form button:hover {
+    background: #2575fc;
+    transform: translateY(-2px);
+  }
+  
+  .signin-form button:active {
+    transform: translateY(0);
+  }
+  
+  /* Link or Additional Text (if added later) */
+  .signin-form p {
+    margin-top: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .signin-form p a {
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .signin-form p a:hover {
+    color: #2575fc;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .signin-container {
+      padding: 2rem;
+      border-radius: 15px;
+    }
+  
+    .signin-form h2 {
+      font-size: 1.8rem;
+    }
+  
+    .signin-form input,
+    .signin-form button {
+      padding: 0.7rem;
+      font-size: 0.9rem;
+    }
+  }
